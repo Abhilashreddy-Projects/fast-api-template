@@ -2,8 +2,8 @@ from fastapi import FastAPI, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 
-from database import async_session_maker
-from models import Trade
+from Repository.databse import async_session_maker
+from Repository.Models import Trade
 
 app = FastAPI()
 
